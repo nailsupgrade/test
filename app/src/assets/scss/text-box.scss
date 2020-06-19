@@ -1,0 +1,12 @@
+.text-box{
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  .box__title{
+    @extend %title;
+    margin-bottom: rem(40);
+  }
+  .box__text{
+    @extend %text;
+  }
+}

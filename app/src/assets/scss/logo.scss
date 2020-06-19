@@ -1,0 +1,9 @@
+@import "./utils/vars";
+@import "./utils/mixins";
+
+.logo{
+  font-family: $additionalFont;
+  text-transform: uppercase;
+  font-size: rem(25);
+  color: $default-color;
+}

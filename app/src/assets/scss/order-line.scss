@@ -1,0 +1,32 @@
+.order__line-box{
+  height: 200px;
+  .order{
+    &__text, &__btn{
+      @extend %text;
+      color: $default-color;
+      text-align: center;
+    }
+    &__text{
+      font-size: rem(20);
+      padding-top: rem(55);
+      margin-bottom: rem(30);
+    }
+    &__btn{
+      a{
+        box-sizing: border-box;
+        @extend %btn;
+        font-size: rem(16);
+        color: $default-color;
+        border-color: $default-color;
+      }
+    }
+    &__text{
+      .strong__text{
+        font-weight: 700;
+      }
+      .colored__text{
+        color: $primary-color;
+      }
+    }
+  }
+}

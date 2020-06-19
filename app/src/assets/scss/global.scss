@@ -1,0 +1,129 @@
+@import 'utils/mixins';
+@import 'utils/reset';
+@import 'utils/vars';
+
+//@import 'node_modules/vue-slick-carousel/dist/vue-slick-carousel';
+//@import 'node_modules/vue-slick-carousel/dist/vue-slick-carousel-theme';
+
+
+html {
+  box-sizing: border-box;
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {font-size: 16px;}
+  @media screen and (max-width: $tableWidth) {font-size: 15px;}
+  @media screen and (max-width: $phoneWidth) {font-size: 14px;}
+}
+
+.container{
+  max-width: $desktopWidth;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media(max-width: $desktopWidth){max-width: $smDesktopWidth;}
+  @media(max-width: $smDesktopWidth ){max-width: $tableWidth;}
+  @media(max-width: $tableWidth){max-width: $smTableWidth;}
+}
+
+//.logo{
+//  font-family: $additionalFont;
+//  text-transform: uppercase;
+//  font-size: rem(25);
+//  color: $default-color;
+//}
+//
+//%title{
+//  font-family: $titleFont;
+//  font-weight: 300;
+//  color: $titleFontColor;
+//  font-size: rem(24);
+//  line-height: 1.15;
+//  letter-spacing: 2px;
+//  text-transform: uppercase;
+//}
+//
+//%text{
+//  font-family: $mainFont;
+//  color: $mainFontColor;
+//  font-size: rem(18);
+//  line-height: 25px;
+//  letter-spacing: 1px;
+//}
+//
+//%btn{
+//  font-family: $mainFont;
+//  border: 1px solid $titleFontColor;
+//  border-radius: 50px;
+//  padding: 10px 35px;
+//  text-align: center;
+//  font-size: rem(16);
+//  line-height: 1.15;
+//  color: $titleFontColor;
+//  transition: .4s;
+//
+//  &:hover{
+//    color: $default-color;
+//    background-color: $titleFontColor;
+//  }
+//}
+//
+//%btn-enroll{
+//  @extend %btn;
+//  background-color: $primary-color;
+//  border: 1px solid $secondary-color ;
+//
+//  &:hover{
+//    background-color: #FED5DA;
+//    color: $neutral-primary;
+//  }
+//
+//}
+//
+//.text{
+//  &--bold{
+//    font-weight: 700;
+//  }
+//  &--colored{
+//    color: #19BD9A;
+//  }
+//}
+//
+//%bar{
+//  background-color: $primary-color;
+//  .container{
+//    display: flex;
+//    justify-content: space-between;
+//
+//    .bar__btn-box{
+//      min-width: 200px;
+//      display: flex;
+//      a{
+//        margin: auto auto;
+//
+//      }
+//    }
+//  }
+//
+//  .bar{
+//    &__text{
+//      @extend %text;
+//      color: $default-color;
+//      font-size: rem(20);
+//      margin: rem(45) 0;
+//    }
+//
+//    &__btn{
+//      @extend %btn;
+//      color: $default-color;
+//      border: 1px solid $default-color;
+//
+//      &:hover{
+//        background-color: $default-color;
+//        color: $primary-color;
+//      }
+//    }
+//  }
+//}
+

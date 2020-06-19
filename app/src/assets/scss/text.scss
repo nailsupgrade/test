@@ -1,0 +1,19 @@
+@import "./utils/vars";
+@import "./utils/mixins";
+
+%title{
+  font-family: $titleFont;
+  font-weight: 300;
+  color: $titleFontColor;
+  font-size: rem(20);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+%text{
+  font-family: $mainFont;
+  color: $default-dark-color;
+  font-size: rem(14);
+  line-height: 25px;
+  letter-spacing: 0.5px;
+}
